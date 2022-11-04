@@ -14,7 +14,7 @@ const SearchScreen = () => {
     results.filter((result) => result.price === price);
 
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <SearchBar
         onTermChange={setTerm}
         onTermSubmit={() => searchApi(term)}
